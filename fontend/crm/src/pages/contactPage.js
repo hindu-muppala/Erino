@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import contactService from "../service/contactService";
 import ContactTable from "../components/table";
+import NavBar  from "../components/nav";
 
 const ContactPage = () => {
 
@@ -46,6 +47,7 @@ const ContactPage = () => {
    
    return (
    <div>
+    <NavBar/>
     <h1 style={{ textAlign: "center" }}> Contacts Details </h1>
    <ContactTable contacts={contacts} onDelete ={handleDelete} onUpdate={handleEdit}/>
    </div>

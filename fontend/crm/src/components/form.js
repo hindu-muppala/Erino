@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, TextField, Button } from '@mui/material';
-
+import NavBar  from './nav';
 const Form = () => {
   
   const [formData, setFormData] = useState({
@@ -42,6 +42,7 @@ const Form = () => {
 
   return (
     <>
+    <NavBar/>
       <h1 style={{ textAlign: "center" }}>Add Contact Details</h1>
     <Box
       component="form"
