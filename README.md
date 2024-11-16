@@ -59,24 +59,39 @@ mongosh
 
 ## Working
 
-### Architecture
-
 ### Read contact request
+#### Flow Diagram
+
+![image](https://github.com/user-attachments/assets/84e6b757-63e3-46aa-bc03-acd7366ae6f3)
+
+Request from fontend
 
 ![image](https://github.com/user-attachments/assets/10e2cc7a-557d-4f5b-89c4-4f7fc6682199)
 
 
 ### Update contact request
+#### Flow Diagram
+![image](https://github.com/user-attachments/assets/9d20a55a-9150-4d93-9051-c971439bdbd5)
+
+Request from fontend
 
 ![image](https://github.com/user-attachments/assets/1da6febf-92a9-4c7c-9e81-9841a6cc73cc)
 
 
 ### Add contact request
+#### Flow Diagram
+![image](https://github.com/user-attachments/assets/874f331d-1d33-42d6-9536-29334d69cddc)
+
+Request from fontend
 
 ![image](https://github.com/user-attachments/assets/8b2f3649-d7c2-4be1-96ef-2431275a8b8d)
 
 
 ### Delete contact request 
+### Flow Diagram
+![image](https://github.com/user-attachments/assets/9f06f658-5a1c-47c5-bf3e-60df22cfc8d1)
+
+Request from fontend
 
 ![image](https://github.com/user-attachments/assets/0cc55e58-dc50-4b97-87cd-57e25d0d2f96)
 
