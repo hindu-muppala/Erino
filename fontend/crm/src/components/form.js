@@ -41,6 +41,8 @@ const Form = () => {
   };
 
   return (
+    <>
+      <h1 style={{ textAlign: "center" }}>Add Contact Details</h1>
     <Box
       component="form"
       onSubmit={handleSubmit}
@@ -113,6 +115,7 @@ const Form = () => {
         Submit
       </Button>
     </Box>
+    </>
   );
 };
 

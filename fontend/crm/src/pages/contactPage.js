@@ -46,7 +46,7 @@ const ContactPage = () => {
    
    return (
    <div>
-    <h1> Contacts </h1>
+    <h1 style={{ textAlign: "center" }}> Contacts Details </h1>
    <ContactTable contacts={contacts} onDelete ={handleDelete} onUpdate={handleEdit}/>
    </div>
    )
