@@ -20,8 +20,8 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 const drawerWidth = 240;
 const navItems = [
-  { label: 'Add Contacts', path: '/' },
-  { label: 'View Contacts', path: '/form' },
+  { label: 'Add Contacts', path: '/form' },
+  { label: 'View Contacts', path: '/' },
 ];
 
 function NavBar(props) {
@@ -35,7 +35,7 @@ function NavBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        CRM
       </Typography>
       <Divider />
       <List>
@@ -108,12 +108,6 @@ function NavBar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-          {/* Main content goes here */}
-        </Typography>
-      </Box>
     </Box>
   );
 }

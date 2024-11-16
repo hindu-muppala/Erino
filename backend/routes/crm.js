@@ -34,6 +34,7 @@ router.post("/", async (req, res) => {
       x.email == email || x.contact == contact;
     });
     ////////////////
+   // console.log(duplicate);
     if (duplicate) {
       return res
         .status(409)
@@ -83,7 +84,7 @@ router.put("/:id", async (req, res) => {
     if (!uC) {
       return res.status(404).json({ message: "Contact not Found" });
     }
-    console.log(req.body)
+    // console.log(req.body)
     res.status(200).json(uC);
   } catch (error) {
     res.status(400).json({ error: error.message });
