@@ -34,17 +34,27 @@ Start the MongoDB service:
 mongod
 
 ```
-Step 2: Connect to the MongoDB Database
+Step 2: Connect to the MongoDB Database by mongosh shell
 
 ```
-Open the MongoDB shell:
+mongosh 
 
 ```
-mongosh
-````
-For windows just type crm as shown
+## Then type "crm" like below:
+### Explanation:  
+![image](https://github.com/user-attachments/assets/8e94587b-7ed8-4e2c-90e1-53acf382141a)
 
-![image](https://github.com/user-attachments/assets/ae0f6c3a-82d5-4a6b-a710-58233809c839)
+## MongoDB Schema used:
+
+![image](https://github.com/user-attachments/assets/057955e8-328d-4ff0-820e-87b76313af56)
+
+## Why MongoDB?
+
+## Since large number of users use the application to main the consistency and since the independent data is there, using MongoDB is better ( Since no need of joins )
+
+## For faster response
+
+
 
 
 
