@@ -22,7 +22,11 @@ import { Delete as DeleteIcon, Edit as EditIcon } from "@mui/icons-material";
 
 
 const ContactTable = ({ contacts, onDelete , onUpdate}) => {
-
+  contacts.sort((a,b) => {
+    if (a.first_name.toLowerCase() < b.first_name.toLowerCase()) return -1
+    if (a.first_name.toLowerCase() > b.first_name.toLowerCase()) return 1
+    return 0
+  })
   const  [openEditDialog, setOpenEditDialog] =  useState(false)
   const  [currentContact, setCurrentContact] =  useState(null)
   const  [successMessage, setSuccessMessage] =  useState("")
@@ -45,14 +49,13 @@ const ContactTable = ({ contacts, onDelete , onUpdate}) => {
       setSuccessMessage("Contact updated sucessfully")
       // update contacts state of which currentContact changed
     }
-    
-
   }
 
   const handleInputChange = (e) =>{
     const {name, value} = e.target;
     setCurrentContact((prev) => ({...prev, [name] : value}));
   };
+
     return (
       <>
     <TableContainer component={Paper}>
