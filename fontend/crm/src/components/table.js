@@ -59,6 +59,7 @@ const ContactTable = ({ contacts, onDelete , onUpdate}) => {
       <Table>
         <TableHead>
           <TableRow>
+            <TableCell>No.</TableCell>
             <TableCell>First Name</TableCell>
             <TableCell>Last Name</TableCell>
             <TableCell>Email</TableCell>
@@ -69,8 +70,9 @@ const ContactTable = ({ contacts, onDelete , onUpdate}) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {contacts.map((contact) => (
+          {contacts.map((contact, i) => (
             <TableRow key={contact._id}>
+              <TableCell>{i+1}</TableCell>
               <TableCell>{contact.first_name}</TableCell>
               <TableCell>{contact.last_name}</TableCell>
               <TableCell>{contact.email}</TableCell>

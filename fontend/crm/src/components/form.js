@@ -32,12 +32,13 @@ const Form = () => {
     try {
       const response = await fetch(apiUrl, options);
       const responseData = await response.json();
-      console.log('Response:', responseData);
+    //  console.log('Response:', responseData);
+     alert("Contact Added Successully")
     } catch (error) {
-      console.error('Error submitting form:', error);
+     // console.error('Error submitting form:', error);
+     alert("Not Added once check email and phone number need to be unique")
     }
-    // console.log(formData)
-    // console.log(JSON.stringify(formData))
+    
   };
 
   return (
